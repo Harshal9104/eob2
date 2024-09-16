@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prema - Medical Enquiry Portal</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <!-- Logo section for Prema -->
+        <div id="logo-container">
+            <img src="premera-blue-cross-logo-vector.png" alt="Prema Logo" id="prema-logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- Navigation links for different pages -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="search-section">
+            <h1>Search for Your Medical Records</h1>
+            <!-- Search bar for user input -->
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Enter NPI ID, date, or vendor">
+                <!-- Button to trigger the search function -->
+                <button onclick="searchEntities()">Search</button>
+            </div>
+
+            <!-- Filters for refining search results -->
+            <div id="search-filters">
+                <label for="date-filter">Date of Payment:</label>
+                <input type="date" id="date-filter">
+                
+                <label for="vendor-filter">Vendor:</label>
+                <select id="vendor-filter">
+                    <option value="">Select Vendor</option>
+                    <option value="Vendor A">Vendor A</option>
+                    <option value="Vendor B">Vendor B</option>
+                </select>
+                
+                <label for="insurance-company-filter">Insurance Company:</label>
+                <select id="insurance-company-filter">
+                    <option value="">All</option>
+                    <option value="Insurance Co 1">Insurance Co 1</option>
+                    <option value="Insurance Co 2">Insurance Co 2</option>
+                </select>
+            </div>
+            
+            <!-- Container for displaying search results -->
+            <div id="search-results"></div>
+        </section>
+    </main>
+
+    <!-- Including the JavaScript file that handles search logic -->
+    <script src="search.js"></script>
+</body>
+</html>

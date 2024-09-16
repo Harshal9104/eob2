@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prema - Explanation of Benefits</title>
+    <link rel="stylesheet" href="design2.css">
+</head>
+<body>
+    <header>
+        <!-- Logo section for Prema -->
+        <div id="logo-container">
+            <img src="premera-blue-cross-logo-vector.png" alt="Prema Logo" id="prema-logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- Navigation links for different pages -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="eob-section">
+            <h1>Explanation of Benefits</h1>
+
+            <!-- Displaying the Grand Total Summary -->
+            <h2>Grand Total Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Billed Charges</th>
+                        <th>Allowed Amount</th>
+                        <th>Provider Adjustment</th>
+                        <th>Insurance Adjustment</th>
+                        <th>Patient Liability</th>
+                        <th>Payable Amount</th>
+                        <th>NPI ID</th>
+                    </tr>
+                </thead>
+                <tbody id="grand-total-summary"></tbody>
+            </table>
+
+            <!-- Payment details section -->
+            <h2>Payment Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date of Payment</th>
+                        <th>Check Number</th>
+                        <th>Payment Reference</th>
+                        <th>Provider Name</th>
+                        <th>Provider Tax ID Number</th>
+                        <th>NPI ID</th>
+                        <th>Pay to (Address)</th>
+                        <th>Bank Name</th>
+                        <th>Payable Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="payment-details"></tbody>
+            </table>
+
+            <!-- Detailed Explanation of Payment -->
+            <h2>Detailed Explanation of Payment</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Service Dates</th>
+                        <th>Code/Modifier</th>
+                        <th>Units Billed/Allowed</th>
+                        <th>Billed Charges</th>
+                        <th>Allowed Amount</th>
+                        <th>Adjustment(A)/Disadjustment(D)</th>
+                        <th>Insurance Adjustment</th>
+                        <th>Patient Liability</th>
+                        <th>Payable Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="detailed-explanation-of-payment"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Including the JavaScript file for dynamic data population -->
+    <script src="eob.js"></script>
+</body>
+</html>
